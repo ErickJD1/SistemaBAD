@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{%block title %} Devask | Devcode.la {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row cab">
+        <div class="col-md-8 contenido-bienvenida">
+            <div class="jumbotron jumbotron-customize">
+                <h1>Bienvenidos a DevAsk!</h1>
+                <p class="subtitulo-jumbotron">El Sistema e Discusiones para Programadores</p>
+                <p>
+                    <a href="preguntas/ask/">
+                        <button type="button" class="btn btn-primary btn-lg btn-pregunta">Has tu pregunta!</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 login" style="background-color:#d9edf7">
+            <h3>Conectate con:</h3>
+            <p>
+                <button type="button" class="btn btn-primary btn-lg btn-lg-customize-fb" style="width:100%; margin-bottom:5%">
+                    <span>Facebook</span>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-lg-customize-fb" style="width:100%; background-color:#A9A9F5; margin-bottom:5%">
+                    <span>Twitter</span>
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 contenido" >
+            <ul class="nav nav-pills">
+                <li class="top">
+                    <a href="#">
+                        Top 5 Preguntas:
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <span class="badge pull-right badge-customize">42</span>
+                        Preguntas:
+                    </a>
+                </li>
+
+
+                <li >
+                    <a href="#">
+                        <span class="badge pull-right badge-customize">1004</span>
+                        Usuarios:
+                    </a>
+                </li>
+
+                <li >
+                    <a href="#">
+                        <span class="badge pull-right badge-customize">42</span>
+                        Home:
+                    </a>
+                </li>
+            </ul>
+
+            <h4>Por que me sale un error en la instalacion django en windows?
+                <small>@Dominguez</small>
+                <img src="{{STATIC_URL}}img/django.png" width="20%" class="foto-perfil"><span></span>
+            </h4>
+            <blockquote>
+                <p class="bg-info bg-info-customize">
+                    Vistos<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Respuestas<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Votos<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Publicado hace:<span>30 min</span>
+                </p>
+
+                <p class="tags">
+                    <span>Etiquetas:</span>
+                    <button type="button" class="btn btn-default btn-xs">Node</button>
+                    <button type="button" class="btn btn-default btn-xs">Django 1.11</button>
+                </p>
+            </blockquote>
+
+
+            <h4>Que es mejor Vistas basadas en clases o en funciones?
+                <small>@Dominguez</small>
+                <img src="{{STATIC_URL}}img/django.png" width="20%" class="foto-perfil"><span></span>
+            </h4>
+            <blockquote>
+                <p class="bg-info bg-info-customize">
+                    Vistos<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Respuestas<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Votos<span>0</span>
+                </p>
+
+                <p class="bg-info bg-info-customize">
+                    Publicado hace:<span>30 min</span>
+                </p>
+
+                <p class="tags">
+                    <span>Etiquetas:</span>
+                    <button type="button" class="btn btn-default btn-xs">Node</button>
+                    <button type="button" class="btn btn-default btn-xs">Django 1.11</button>
+                </p>
+            </blockquote>
+        </div>
+        <div style="background-color:#81BEF7; higth:100%"  class="col-md-4 contenido-aside">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
