@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-
 <<<<<<< HEAD
 <html>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
-=======
->>>>>>> refs/remotes/origin/ErickJD
 
     {%load static from staticfiles%}
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}" />
     <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/custom.min.css' %}" />
+      <link rel="stylesheet" href="{% static 'css/custom.min.css' %}" />
+=======
+
+
+    {%load static from staticfiles%}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+>>>>>>> master
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style_login.css' %}" />
     <script  src="{{STATIC_URL}}js/bootstrap.js" ></script>
@@ -19,7 +22,6 @@
 <<<<<<< HEAD
 =======
 
->>>>>>> refs/remotes/origin/ErickJD
 
 <html lang="en" class=" "><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,6 +30,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>{% block title %} {% endblock %} </title>
 
 
  {%load static from staticfiles%}
@@ -49,31 +52,30 @@
 <!-- <script data-module="cloudflare/rocket" id="cfjs_block_e270d35b9c" onload="CloudFlare.__cfjs_block_e270d35b9c_load()" onerror="CloudFlare.__cfjs_block_e270d35b9c_error()" onreadystatechange="CloudFlare.__cfjs_block_e270d35b9c_readystatechange()" type="text/javascript" src="https://colorlib.com/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js"></script> -->
 
  <link rel="stylesheet" href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" />
+>>>>>>> master
 
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet" href="{% static 'vendors/font-awesome/css/font-awesome.min.css' %}" />
-
-    <!-- NProgress -->
-  
-    <link rel="stylesheet" href="{% static 'vendors/nprogress/nprogress.css' %}" />
-
-    <!-- iCheck -->
-
-    <link rel="stylesheet" href="{% static 'vendors/iCheck/skins/flat/green.css' %}" />
-    
-    <!-- bootstrap-progressbar -->
-    <link rel="stylesheet" href="{% static 'vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css' %}" />
-
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="{% static 'vendors/jqvmap/dist/jqvmap.min.css' %}" />    
-  
-    <!-- bootstrap-daterangepicker -->
-    
-    <link rel="stylesheet" href="{% static 'vendors/bootstrap-daterangepicker/daterangepicker.css' %}" />
-    <!-- Custom Theme Style -->
-     <link rel="stylesheet" href="{% static 'build/css/custom.min.css' %}" />
   </head>
+<<<<<<< HEAD
+  <body><br>
+
+
+  {% if users.is_authenticated %}
+  <script >
+    alert('Hola Mundo');
+  </script>
+{% else %}
+
+{% endif %}
+    <nav  class="navbar navbar-default navbar-inverse navbar-customize" role="navigation">
+      <div  class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+
+{% block content %}
+
+{% endblock %}
+<script src="js/bootstrap.js"></script>
+=======
 
   <body class="nav-sm">
     <div class="container body">
@@ -402,25 +404,6 @@ ga('send', 'pageview');
 <div class="jqvmap-label" style="display: none;"></div><div class="daterangepicker dropdown-menu ltr opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><ul><li data-range-key="Today">Today</li><li data-range-key="Yesterday">Yesterday</li><li data-range-key="Last 7 Days">Last 7 Days</li><li data-range-key="Last 30 Days">Last 30 Days</li><li data-range-key="This Month">This Month</li><li data-range-key="Last Month">Last Month</li><li data-range-key="Custom">Custom</li></ul><div class="range_inputs"><button class="applyBtn btn btn-default btn-small btn-primary" disabled="disabled" type="button">Submit</button> <button class="cancelBtn btn btn-default btn-small" type="button">Clear</button></div></div></div></body></html>
 
 
-  <body><br>
-
-
-<<<<<<< HEAD
-  {% if users.is_authenticated %}
-  <script >
-    alert('Hola Mundo');
-  </script>
-{% else %}
-
-{% endif %}
-    <nav  class="navbar navbar-default navbar-inverse navbar-customize" role="navigation">
-      <div  class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-
-
-{% block content %}
-=======
 >>>>>>> master
-
   </body>
 </html>

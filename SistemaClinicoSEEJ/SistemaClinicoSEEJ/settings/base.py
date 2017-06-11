@@ -1,5 +1,4 @@
 from unipath import Path
-from django.core.urlresolvers import reverse_lazy
 
 BASE_DIR = Path(__file__).ancestor(3)
 
@@ -29,7 +28,6 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
 
-    'apps.home',
     'apps.users',
     'apps.models',
 
@@ -91,6 +89,3 @@ AUTH_USER_MODEL = 'users.User'
 # ]
 
 STATIC_URL = '/static/'
-
-
-LOGIN_REDIRECT_URL = reverse_lazy('principal:vista')

@@ -3,6 +3,5 @@ from .views import IndexView
 
 urlpatterns = [
 
-    url(r'^vista$', IndexView.as_view(), name='vista'),
-   
+    url(r'^$', IndexView.as_view()),
 ]
