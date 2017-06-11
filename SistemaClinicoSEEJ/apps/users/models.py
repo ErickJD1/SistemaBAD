@@ -23,10 +23,17 @@ class UserManager(BaseUserManager):
     def create_superuser(self, username, email, password, **extra_fields):
         return self._create_user(username, email, password, True, True, **extra_fields)
 
+
+class Rol(models.Model):
+    nombreRol = models.CharField(max_length = 50)
+    descripcionRol = models.CharField(max_length=200)
+
+
 class User(AbstractBaseUser, PermissionsMixin):
     def get_full_name(self):
         pass
 
+    Rol = models.ForeignKey(Rol, null=True, blank=True, on_delete=models.CASCADE)
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(max_length=50, unique=True)
     first_name = models.CharField(max_length=100)
@@ -45,5 +52,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         return self.username
 
-class Permiso(model.models):
+
+class Permiso(models.Model):
+    nombrePermiso = models.CharField(max_length = 50)
     descripcionPermiso = models.CharField(max_length=200)
+
+
+class RolPermiso(models.Model):
+    Rol = models.ForeignKey(Rol, null=True, blank=True, on_delete=models.CASCADE)
+    Permiso = models.ForeignKey(Permiso, null=True, blank=True, on_delete=models.CASCADE)
