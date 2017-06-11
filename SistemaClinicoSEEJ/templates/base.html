@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
 
     {%load static from staticfiles%}
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+      <link rel="stylesheet" href="{% static 'css/custom.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style_login.css' %}" />
     <script  src="{{STATIC_URL}}js/bootstrap.js" ></script>
@@ -12,37 +15,7 @@
 
   </head>
   <body><br>
-    <nav  class="navbar navbar-default navbar-inverse navbar-customize" role="navigation">
-      <div  class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
 
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Facturacion de servicios</a>
-          </div>
-
-
-<div id="navbar" class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Facturar</a></li>
-              <li><a href="#">Cobros</a></li>
-              <li><a href="#">Pagos</a></li>
-              <li><a href="#">Comprobante</a></li>
-
-            </ul>
-          </div>
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-     
-        <!-- /.navbar-collapse --> </div>
-      <!-- /.container-fluid --> </nav>
 
 {% block content %}
 
