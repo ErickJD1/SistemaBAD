@@ -12,6 +12,14 @@
 
   </head>
   <body><br>
+
+  {% if users.is_authenticated %}
+  <script >
+    alert('Hola Mundo');
+  </script>
+{% else %}
+
+{% endif %}
     <nav  class="navbar navbar-default navbar-inverse navbar-customize" role="navigation">
       <div  class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
