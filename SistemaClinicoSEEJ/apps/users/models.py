@@ -23,7 +23,6 @@ class UserManager(BaseUserManager):
     def create_superuser(self, username, email, password, **extra_fields):
         return self._create_user(username, email, password, True, True, **extra_fields)
 
-
 class User(AbstractBaseUser, PermissionsMixin):
     def get_full_name(self):
         pass
@@ -45,3 +44,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     # definicion de funciones
     def get_short_name(self):
         return self.username
+
+class Permiso(model.models):
+    descripcionPermiso = models.CharField(max_length=200)
